@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<select id="typeFilter" onchange="filter()">
+<option value="">Typ: Alle</option>
+<option>Steckling</option>
+<option>Pflanze</option>
+</select>
+<select id="statusFilter" onchange="filter()">
+<option value="">Status: Alle</option>
+<option value="verfügbar">Verfügbar</option>
+<option value="reserviert">Reserviert</option>
+<option value="vergeben">Vergeben</option>
+</select>
+</div>
+<div class="hint">Kontakt per Instagram DM: <strong>@deinhandle</strong> · Privatabgabe, kein Gewerbe</div>
+</div>
+</header>
+
+
+<main class="wrap">
+<div class="grid" id="grid">
+<!-- 👉 Dupliziere diesen Block für jede Pflanze und passe Inhalte/Bild an. -->
+<article class="card" data-name="Monstera deliciosa" data-type="Steckling" data-status="verfügbar">
+<img src="images/monstera.jpg" alt="Monstera deliciosa Steckling" />
+<div class="body">
+<h3 class="name">Monstera deliciosa</h3>
+<p class="meta">Steckling · bewurzelt</p>
+<div class="row">
+<div class="price">15 €</div>
+<span class="tag ok">verfügbar</span>
+</div>
+</div>
+</article>
+
+
+<article class="card" data-name="Philodendron Pink Princess" data-type="Pflanze" data-status="reserviert">
+<img src="images/pink-princess.jpg" alt="Philodendron Pink Princess" />
+<div class="body">
+<h3 class="name">Philodendron Pink Princess</h3>
+<p class="meta">Pflanze · Größe M</p>
+<div class="row">
+<div class="price">85 €</div>
+<span class="tag warn">reserviert</span>
+</div>
+</div>
+</article>
+
+
+<article class="card" data-name="Anthurium clarinervium" data-type="Pflanze" data-status="vergeben">
+<img src="images/clarinervium.jpg" alt="Anthurium clarinervium" />
+<div class="body">
+<h3 class="name">Anthurium clarinervium</h3>
+<p class="meta">Pflanze · Größe S</p>
+<div class="row">
+<div> </div>
+<span class="tag sold">vergeben</span>
+</div>
+</div>
+</article>
+</div>
+</main>
+
+
+<footer>
+<div class="wrap">© <span id="year"></span> OnlyPlants · Privatverkauf (keine Gewährleistung)</div>
+</footer>
+
+
+<script>
+const q = (id)=>document.getElementById(id);
+const grid = q('grid');
+const year = new Date().getFullYear();
+document.getElementById('year').textContent = year;
+
+
+function filter(){
+const s = q('search').value.toLowerCase().trim();
+const t = q('typeFilter').value;
+const st = q('statusFilter').value;
+for(const card of grid.children){
+const name = card.dataset.name.toLowerCase();
+const type = card.dataset.type;
+const status = card.dataset.status;
+const match = (!s || name.includes(s)) && (!t || type===t) && (!st || status===st);
+card.style.display = match ? '' : 'none';
+}
+}
+</script>
+</body>
+</html>
