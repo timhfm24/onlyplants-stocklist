@@ -1,35 +1,154 @@
 [
-  { "name": "Alocasia Chantrieri & Rhizome" },
-  { "name": "Alocasia Corazon Rhizome" },
-  { "name": "Alocasia Dragon Scale Mint" },
-  { "name": "Alocasia Dragons Breath Rhizome" },
-  { "name": "Alocasia Frydek Rhizome" },
-  { "name": "Alocasia Frydek var Rhizome" },
-  { "name": "Alocasia Gageana Aurea & Albo + Rhizome" },
-  { "name": "Alocasia Golden Bone & Rhizom" },
-  { "name": "Alocasia green Shield" },
-  { "name": "Alocasia Lauterbachiana Variegata Baby" },
-  { "name": "Alocasia Longiloba Silver" },
-  { "name": "Alocasia Lukiwan" },
-  { "name": "Alocasia Nairobi Nights var" },
-  { "name": "Alocasia Ninja Tricolor Rhizome" },
-  { "name": "Alocasia Platinum Rhizome" },
-  { "name": "Alocasia Reginae Rhizome" },
-  { "name": "Alocasia Sanderia Bull Aurea Rhizome" },
-  { "name": "Alocasia Scalprum Rhizome" },
-  { "name": "Alocasia Shattered Glass Rhizome" },
-  { "name": "Alocasia Simpo Albo Rhizome" },
-  { "name": "Alocasia Splash Rhizome" },
-  { "name": "Alocasia Surhimania Purple Rhizome" },
-  { "name": "Alocasia Watsoniana Ripples" },
-  { "name": "Epipremnum Mayari Steckling" },
-  { "name": "Epipremnum Shangri la" },
-  { "name": "Ficus sagittata pink stecklinge" },
-  { "name": "Florida Beauty Steckling" },
-  { "name": "Monstera Standleyana" },
-  { "name": "Monstera White Monster" },
-  { "name": "Philodendron Mamei" },
-  { "name": "Philodendron Plowmanii Steckling" },
-  { "name": "Syngonium Splash Steckling" },
-  { "name": "Thai Creme brûlée" }
+  {
+    "name": "Alocasia Chantrieri Rhizome",
+    "category": "rhizom"
+  },
+  {
+    "name": "Alocasia Chantrieri",
+    "category": "pflanze"
+  },
+  {
+    "name": "Alocasia Corazon Rhizome",
+    "category": "rhizom"
+  },
+  {
+    "name": "Alocasia Dragon Scale Mint",
+    "category": "pflanze"
+  },
+  {
+    "name": "Alocasia Dragons Breath Rhizome",
+    "category": "rhizom"
+  },
+  {
+    "name": "Alocasia Frydek Rhizome",
+    "category": "rhizom"
+  },
+  {
+    "name": "Alocasia Frydek var Rhizome",
+    "category": "rhizom"
+  },
+  {
+    "name": "Alocasia Gageana Albo",
+    "category": "pflanze"
+  },
+  {
+    "name": "Alocasia Gageana Albo Rhizome",
+    "category": "rhizom"
+  },
+  {
+    "name": "Alocasia Gageana Aurea",
+    "category": "pflanze"
+  },
+  {
+    "name": "Alocasia Gageana Aurea Rhizome",
+    "category": "rhizom"
+  },
+  {
+    "name": "Alocasia Golden Bone",
+    "category": "pflanze"
+  },
+  {
+    "name": "Alocasia Golden Bone Rhizom",
+    "category": "rhizom"
+  },
+  {
+    "name": "Alocasia Green Shield",
+    "category": "pflanze"
+  },
+  {
+    "name": "Alocasia Lauterbachiana Variegata",
+    "category": "pflanze"
+  },
+  {
+    "name": "Alocasia Longiloba Silver",
+    "category": "pflanze"
+  },
+  {
+    "name": "Alocasia Lukiwan",
+    "category": "pflanze"
+  },
+  {
+    "name": "Alocasia Nairobi Nights var",
+    "category": "pflanze"
+  },
+  {
+    "name": "Alocasia Ninja Tricolor Rhizome",
+    "category": "rhizom"
+  },
+  {
+    "name": "Alocasia Platinum Rhizome",
+    "category": "rhizom"
+  },
+  {
+    "name": "Alocasia Reginae Rhizome",
+    "category": "rhizom"
+  },
+  {
+    "name": "Alocasia Sanderia Bull Aurea Rhizome",
+    "category": "rhizom"
+  },
+  {
+    "name": "Alocasia Scalprum Rhizome",
+    "category": "rhizom"
+  },
+  {
+    "name": "Alocasia Shattered Glass Rhizome",
+    "category": "rhizom"
+  },
+  {
+    "name": "Alocasia Simpo Albo Rhizome",
+    "category": "rhizom"
+  },
+  {
+    "name": "Alocasia Splash Rhizome",
+    "category": "rhizom"
+  },
+  {
+    "name": "Alocasia Surhimania Purple Rhizome",
+    "category": "rhizom"
+  },
+  {
+    "name": "Alocasia Watsoniana Ripples",
+    "category": "pflanze"
+  },
+  {
+    "name": "Epipremnum Mayari Steckling",
+    "category": "steckling"
+  },
+  {
+    "name": "Epipremnum Shangri La",
+    "category": "pflanze"
+  },
+  {
+    "name": "Ficus Sagittata Pink Stecklinge",
+    "category": "steckling"
+  },
+  {
+    "name": "Florida Beauty Steckling",
+    "category": "steckling"
+  },
+  {
+    "name": "Monstera Standleyana",
+    "category": "pflanze"
+  },
+  {
+    "name": "Monstera White Monster",
+    "category": "pflanze"
+  },
+  {
+    "name": "Philodendron Mamei",
+    "category": "pflanze"
+  },
+  {
+    "name": "Philodendron Plowmanii Steckling",
+    "category": "steckling"
+  },
+  {
+    "name": "Syngonium Splash Steckling",
+    "category": "steckling"
+  },
+  {
+    "name": "Thai Creme Brûlée",
+    "category": "pflanze"
+  }
 ]

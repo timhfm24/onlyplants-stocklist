@@ -1,100 +1,82 @@
 <!DOCTYPE html>
-<select id="typeFilter" onchange="filter()">
-<option value="">Typ: Alle</option>
-<option>Steckling</option>
-<option>Pflanze</option>
-</select>
-<select id="statusFilter" onchange="filter()">
-<option value="">Status: Alle</option>
-<option value="verfügbar">Verfügbar</option>
-<option value="reserviert">Reserviert</option>
-<option value="vergeben">Vergeben</option>
-</select>
-</div>
-<div class="hint">Kontakt per Instagram DM: <strong>@deinhandle</strong> · Privatabgabe, kein Gewerbe</div>
-</div>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>OnlyPlants Stocklist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <select id="typeFilter" onchange="filter()">
+    <option value="">Typ: Alle</option>
+    <option>Steckling</option>
+    <option>Pflanze</option>
+  </select>
+  <select id="statusFilter" onchange="filter()">
+    <option value="">Status: Alle</option>
+    <option value="verfügbar">Verfügbar</option>
+    <option value="reserviert">Reserviert</option>
+    <option value="vergeben">Vergeben</option>
+  </select>
+  <div class="hint">Kontakt per Instagram DM: <strong>@deinhandle</strong> · Privatabgabe, kein Gewerbe</div>
 </header>
 
-
 <main class="wrap">
-<div class="grid" id="grid">
-<!-- 👉 Dupliziere diesen Block für jede Pflanze und passe Inhalte/Bild an. -->
-<article class="card" data-name="Monstera deliciosa" data-type="Steckling" data-status="verfügbar">
-<img src="images/monstera.jpg" alt="Monstera deliciosa Steckling" />
-<div class="body">
-<h3 class="name">Monstera deliciosa</h3>
-<p class="meta">Steckling · bewurzelt</p>
-<div class="row">
-<div class="price">15 €</div>
-<span class="tag ok">verfügbar</span>
-</div>
-</div>
-</article>
-
-  <article class="card" data-name="Monstera White Monster" data-type="Pflanze" data-status="verfügbar">
-<img src="images/monstera.jpg" alt="Monstera White Monster" />
-<div class="body">
-<h3 class="name">Monstera deliciosa</h3>
-<p class="meta">Steckling · bewurzelt</p>
-<div class="row">
-<div class="price">15 €</div>
-<span class="tag ok">verfügbar</span>
-</div>
-</div>
-</article>
-
-
-<article class="card" data-name="Philodendron Pink Princess" data-type="Pflanze" data-status="reserviert">
-<img src="images/pink-princess.jpg" alt="Philodendron Pink Princess" />
-<div class="body">
-<h3 class="name">Philodendron Pink Princess</h3>
-<p class="meta">Pflanze · Größe M</p>
-<div class="row">
-<div class="price">85 €</div>
-<span class="tag warn">reserviert</span>
-</div>
-</div>
-</article>
-
-
-<article class="card" data-name="Anthurium clarinervium" data-type="Pflanze" data-status="vergeben">
-<img src="images/clarinervium.jpg" alt="Anthurium clarinervium" />
-<div class="body">
-<h3 class="name">Anthurium clarinervium</h3>
-<p class="meta">Pflanze · Größe S</p>
-<div class="row">
-<div> </div>
-<span class="tag sold">vergeben</span>
-</div>
-</div>
-</article>
-</div>
+  <ul class="plant-list" id="grid">
+    <!-- Die Pflanzen werden hier per JS als <li> eingefügt -->
+  </ul>
 </main>
 
-
 <footer>
-<div class="wrap">© <span id="year"></span> OnlyPlants · Privatverkauf (keine Gewährleistung)</div>
+  <div class="wrap">© <span id="year"></span> OnlyPlants · Privatverkauf (keine Gewährleistung)</div>
 </footer>
-
 
 <script>
 const q = (id)=>document.getElementById(id);
 const grid = q('grid');
-const year = new Date().getFullYear();
-document.getElementById('year').textContent = year;
+document.getElementById('year').textContent = new Date().getFullYear();
 
+// Pflanzen aus JSON laden und anzeigen
+fetch('plants.json', { cache: 'no-store' })
+  .then(r => r.json())
+  .then(data => render(data))
+  .catch(err => {
+    grid.innerHTML = '<div>Fehler beim Laden der Stocklist.</div>';
+    console.error(err);
+  });
+
+function render(plants) {
+  grid.innerHTML = plants.map(p => plantListItem(p)).join('');
+}
+
+function plantListItem(p) {
+  let type = p.category;
+  type = type.charAt(0).toUpperCase() + type.slice(1);
+  const status = 'verfügbar';
+  const price = '—';
+  return `<li class="plant-item" data-name="${escapeHTML(p.name)}" data-type="${type}" data-status="${status}">
+    <div>
+      <strong>${escapeHTML(p.name)}</strong>
+      <div class="meta">${type}</div>
+    </div>
+    <span class="price">${price}</span>
+    <span class="tag ok">${status}</span>
+  </li>`;
+}
+
+function escapeHTML(s){
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+}
 
 function filter(){
-const s = q('search').value.toLowerCase().trim();
-const t = q('typeFilter').value;
-const st = q('statusFilter').value;
-for(const card of grid.children){
-const name = card.dataset.name.toLowerCase();
-const type = card.dataset.type;
-const status = card.dataset.status;
-const match = (!s || name.includes(s)) && (!t || type===t) && (!st || status===st);
-card.style.display = match ? '' : 'none';
-}
+  const t = q('typeFilter').value;
+  const st = q('statusFilter').value;
+  for(const item of grid.children){
+    const type = item.dataset.type.toLowerCase();
+    const status = item.dataset.status;
+    const match = (!t || type===t.toLowerCase()) && (!st || status===st);
+    item.style.display = match ? '' : 'none';
+  }
 }
 </script>
 </body>
