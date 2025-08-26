@@ -1,154 +1,192 @@
 [
   {
     "name": "Alocasia Chantrieri Rhizome",
-    "category": "rhizom"
+    "category": "rhizom",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Chantrieri",
-    "category": "pflanze"
+    "category": "pflanze",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Corazon Rhizome",
-    "category": "rhizom"
+    "category": "rhizom",
+    "state": "reserviert"
   },
   {
     "name": "Alocasia Dragon Scale Mint",
-    "category": "pflanze"
+    "category": "pflanze",
+    "state": "nicht verfügbar"
   },
   {
     "name": "Alocasia Dragons Breath Rhizome",
-    "category": "rhizom"
+    "category": "rhizom",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Frydek Rhizome",
-    "category": "rhizom"
+    "category": "rhizom",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Frydek var Rhizome",
-    "category": "rhizom"
+    "category": "rhizom",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Gageana Albo",
-    "category": "pflanze"
+    "category": "pflanze",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Gageana Albo Rhizome",
-    "category": "rhizom"
+    "category": "rhizom",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Gageana Aurea",
-    "category": "pflanze"
+    "category": "pflanze",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Gageana Aurea Rhizome",
-    "category": "rhizom"
+    "category": "rhizom",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Golden Bone",
-    "category": "pflanze"
+    "category": "pflanze",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Golden Bone Rhizom",
-    "category": "rhizom"
+    "category": "rhizom",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Green Shield",
-    "category": "pflanze"
+    "category": "pflanze",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Lauterbachiana Variegata",
-    "category": "pflanze"
+    "category": "pflanze",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Longiloba Silver",
-    "category": "pflanze"
+    "category": "pflanze",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Lukiwan",
-    "category": "pflanze"
+    "category": "pflanze",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Nairobi Nights var",
-    "category": "pflanze"
+    "category": "pflanze",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Ninja Tricolor Rhizome",
-    "category": "rhizom"
+    "category": "rhizom",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Platinum Rhizome",
-    "category": "rhizom"
+    "category": "rhizom",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Reginae Rhizome",
-    "category": "rhizom"
+    "category": "rhizom",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Sanderia Bull Aurea Rhizome",
-    "category": "rhizom"
+    "category": "rhizom",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Scalprum Rhizome",
-    "category": "rhizom"
+    "category": "rhizom",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Shattered Glass Rhizome",
-    "category": "rhizom"
+    "category": "rhizom",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Simpo Albo Rhizome",
-    "category": "rhizom"
+    "category": "rhizom",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Splash Rhizome",
-    "category": "rhizom"
+    "category": "rhizom",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Surhimania Purple Rhizome",
-    "category": "rhizom"
+    "category": "rhizom",
+    "state": "verfügbar"
   },
   {
     "name": "Alocasia Watsoniana Ripples",
-    "category": "pflanze"
+    "category": "pflanze",
+    "state": "verfügbar"
   },
   {
     "name": "Epipremnum Mayari Steckling",
-    "category": "steckling"
+    "category": "steckling",
+    "state": "verfügbar"
   },
   {
     "name": "Epipremnum Shangri La",
-    "category": "pflanze"
+    "category": "pflanze",
+    "state": "verfügbar"
   },
   {
     "name": "Ficus Sagittata Pink Stecklinge",
-    "category": "steckling"
+    "category": "steckling",
+    "state": "verfügbar"
   },
   {
     "name": "Florida Beauty Steckling",
-    "category": "steckling"
+    "category": "steckling",
+    "state": "verfügbar"
   },
   {
     "name": "Monstera Standleyana",
-    "category": "pflanze"
+    "category": "pflanze",
+    "state": "verfügbar"
   },
   {
     "name": "Monstera White Monster",
-    "category": "pflanze"
+    "category": "pflanze",
+    "state": "verfügbar"
   },
   {
     "name": "Philodendron Mamei",
-    "category": "pflanze"
+    "category": "pflanze",
+    "state": "verfügbar"
   },
   {
     "name": "Philodendron Plowmanii Steckling",
-    "category": "steckling"
+    "category": "steckling",
+    "state": "verfügbar"
   },
   {
     "name": "Syngonium Splash Steckling",
-    "category": "steckling"
+    "category": "steckling",
+    "state": "verfügbar"
   },
   {
     "name": "Thai Creme Brûlée",
-    "category": "pflanze"
+    "category": "pflanze",
+    "state": "verfügbar"
   }
 ]

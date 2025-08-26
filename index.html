@@ -35,15 +35,13 @@
   <div class="filters-row">
     <select id="typeFilter" onchange="filter()">
       <option value="">Typ: Alle</option>
-      <option value="pflanze">Pflanze</option>
-      <option value="rhizom">Rhizom</option>
-      <option value="steckling">Steckling</option>
+      <!-- Optionen werden dynamisch per JS gesetzt -->
     </select>
     <select id="statusFilter" onchange="filter()">
       <option value="">Status: Alle</option>
       <option value="verfügbar">Verfügbar</option>
       <option value="reserviert">Reserviert</option>
-      <option value="vergeben">Vergeben</option>
+      <option value="nicht verfügbar">Nicht verfügbar</option>
     </select>
   </div>
   <ul class="plant-list" id="grid">
@@ -59,15 +57,27 @@
 const q = (id)=>document.getElementById(id);
 const grid = q('grid');
 document.getElementById('year').textContent = new Date().getFullYear();
+let allPlants = [];
 
 // Pflanzen aus JSON laden und anzeigen
 fetch('plants.json', { cache: 'no-store' })
   .then(r => r.json())
-  .then(data => render(data))
+  .then(data => {
+    allPlants = data;
+    setCategoryOptions(data);
+    render(data);
+  })
   .catch(err => {
     grid.innerHTML = '<div>Fehler beim Laden der Stocklist.</div>';
     console.error(err);
   });
+
+function setCategoryOptions(plants) {
+  const typeFilter = q('typeFilter');
+  const categories = Array.from(new Set(plants.map(p => p.category)));
+  typeFilter.innerHTML = '<option value="">Typ: Alle</option>' +
+    categories.map(cat => `<option value="${cat}">${cat.charAt(0).toUpperCase() + cat.slice(1)}</option>`).join('');
+}
 
 function render(plants) {
   grid.innerHTML = plants.map(p => plantListItem(p)).join('');
@@ -75,17 +85,20 @@ function render(plants) {
 
 function plantListItem(p) {
   let type = p.category;
-  // Für Anzeige: Erster Buchstabe groß
   const typeLabel = type.charAt(0).toUpperCase() + type.slice(1);
-  const status = 'verfügbar';
-  const price = '—';
+  const status = p.state || 'verfügbar';
+  const price = '';
+  // Tag-Klasse je nach Status
+  let tagClass = 'ok';
+  if(status === 'reserviert') tagClass = 'warn';
+  if(status === 'nicht verfügbar') tagClass = 'sold';
   return `<li class="plant-item" data-name="${escapeHTML(p.name)}" data-type="${type}" data-status="${status}">
     <div>
       <strong>${escapeHTML(p.name)}</strong>
       <div class="meta">${typeLabel}</div>
     </div>
     <span class="price">${price}</span>
-    <span class="tag ok">${status}</span>
+    <span class="tag ${tagClass}">${status}</span>
   </li>`;
 }
 
@@ -96,12 +109,10 @@ function escapeHTML(s){
 function filter(){
   const t = q('typeFilter').value;
   const st = q('statusFilter').value;
-  for(const item of grid.children){
-    const type = item.dataset.type.toLowerCase(); // type ist jetzt category
-    const status = item.dataset.status;
-    const match = (!t || type===t) && (!st || status===st);
-    item.style.display = match ? '' : 'none';
-  }
+  const filtered = allPlants.filter(p =>
+    (!t || p.category === t) && (!st || (p.state || 'verfügbar') === st)
+  );
+  render(filtered);
 }
 </script>
 </body>
