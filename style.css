@@ -70,3 +70,150 @@ input,select{width:100%;padding:10px 12px;border:1px solid #d7ded7;border-radius
   background: #fbe6e6;
   color: var(--sold);
 }
+.navbar {
+  position: sticky;
+  top: 0;
+  background: var(--card);
+  border-bottom: 1px solid #e6eae6;
+  box-shadow: 0 2px 8px rgba(0,0,0,.04);
+  z-index: 20;
+}
+.nav-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 0 8px;
+}
+.nav-title .logo {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-filters {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  gap: 12px;
+}
+.nav-filters select {
+  min-width: 140px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid #d7ded7;
+  background: #f8faf8;
+  font-size: 1rem;
+  color: var(--text);
+  transition: border .2s;
+}
+.nav-filters select:focus {
+  border-color: var(--ok);
+  outline: none;
+}
+.nav-contact {
+  font-size: 1rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.nav-contact a {
+  color: var(--ok);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color .2s;
+}
+.nav-contact a:hover {
+  color: var(--sold);
+}
+.nav-contact-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+.nav-contact-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.nav-contact-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+}
+.insta-btn, .mail-btn {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(23,107,58,0.08);
+  transition: background .2s, box-shadow .2s;
+  margin-left: 0;
+  margin-right: 8px;
+  letter-spacing: 0.5px;
+  border: none;
+  min-width: 0;
+  max-width: none;
+  white-space: nowrap;
+  width: auto;
+}
+.insta-btn {
+  background: var(--ok);
+  color: #fff !important;
+}
+.insta-btn:hover {
+  background: #145c32;
+  box-shadow: 0 4px 16px rgba(23,107,58,0.12);
+  opacity: 0.97;
+}
+.mail-btn {
+  background: var(--muted);
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(91,107,91,0.08);
+}
+.mail-btn:hover {
+  background: #3a4a3a;
+  box-shadow: 0 4px 16px rgba(91,107,91,0.12);
+  opacity: 0.97;
+}
+.nav-contact-btns {
+  display: flex;
+  gap: 8px;
+}
+@media (max-width: 700px) {
+  .nav-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .nav-filters {
+    justify-content: flex-start;
+  }
+  .nav-contact-group {
+    align-items: stretch;
+  }
+  .nav-contact-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+  .nav-contact-btns {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .filters-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

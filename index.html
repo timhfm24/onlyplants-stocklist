@@ -4,24 +4,46 @@
   <meta charset="UTF-8">
   <title>OnlyPlants Stocklist</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-  <select id="typeFilter" onchange="filter()">
-    <option value="">Typ: Alle</option>
-    <option>Steckling</option>
-    <option>Pflanze</option>
-  </select>
-  <select id="statusFilter" onchange="filter()">
-    <option value="">Status: Alle</option>
-    <option value="verfügbar">Verfügbar</option>
-    <option value="reserviert">Reserviert</option>
-    <option value="vergeben">Vergeben</option>
-  </select>
-  <div class="hint">Kontakt per Instagram DM: <strong>@deinhandle</strong> · Privatabgabe, kein Gewerbe</div>
+<header class="navbar">
+  <div class="wrap nav-content">
+    <div class="nav-title">
+      <span class="logo">🌱 OnlyPlants Stocklist</span>
+    </div>
+    <div class="nav-contact-group">
+      <div class="nav-contact-row">
+        <span class="nav-contact-title">Kontakt</span>
+        <div class="nav-contact-btns">
+          <a class="insta-btn" href="https://instagram.com/only.plants.tim" target="_blank" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
+            @only.plants.tim
+          </a>
+          <a class="mail-btn" href="mailto:only.plants.tim@gmail.com" aria-label="E-Mail">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
+            only.plants.tim@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
 
 <main class="wrap">
+  <div class="filters-row">
+    <select id="typeFilter" onchange="filter()">
+      <option value="">Typ: Alle</option>
+      <option>Steckling</option>
+      <option>Pflanze</option>
+    </select>
+    <select id="statusFilter" onchange="filter()">
+      <option value="">Status: Alle</option>
+      <option value="verfügbar">Verfügbar</option>
+      <option value="reserviert">Reserviert</option>
+      <option value="vergeben">Vergeben</option>
+    </select>
+  </div>
   <ul class="plant-list" id="grid">
     <!-- Die Pflanzen werden hier per JS als <li> eingefügt -->
   </ul>
