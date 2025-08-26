@@ -35,8 +35,9 @@
   <div class="filters-row">
     <select id="typeFilter" onchange="filter()">
       <option value="">Typ: Alle</option>
-      <option>Steckling</option>
-      <option>Pflanze</option>
+      <option value="pflanze">Pflanze</option>
+      <option value="rhizom">Rhizom</option>
+      <option value="steckling">Steckling</option>
     </select>
     <select id="statusFilter" onchange="filter()">
       <option value="">Status: Alle</option>
@@ -74,13 +75,14 @@ function render(plants) {
 
 function plantListItem(p) {
   let type = p.category;
-  type = type.charAt(0).toUpperCase() + type.slice(1);
+  // Für Anzeige: Erster Buchstabe groß
+  const typeLabel = type.charAt(0).toUpperCase() + type.slice(1);
   const status = 'verfügbar';
   const price = '—';
   return `<li class="plant-item" data-name="${escapeHTML(p.name)}" data-type="${type}" data-status="${status}">
     <div>
       <strong>${escapeHTML(p.name)}</strong>
-      <div class="meta">${type}</div>
+      <div class="meta">${typeLabel}</div>
     </div>
     <span class="price">${price}</span>
     <span class="tag ok">${status}</span>
@@ -95,9 +97,9 @@ function filter(){
   const t = q('typeFilter').value;
   const st = q('statusFilter').value;
   for(const item of grid.children){
-    const type = item.dataset.type.toLowerCase();
+    const type = item.dataset.type.toLowerCase(); // type ist jetzt category
     const status = item.dataset.status;
-    const match = (!t || type===t.toLowerCase()) && (!st || status===st);
+    const match = (!t || type===t) && (!st || status===st);
     item.style.display = match ? '' : 'none';
   }
 }
