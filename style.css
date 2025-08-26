@@ -85,6 +85,11 @@ input,select{width:100%;padding:10px 12px;border:1px solid #d7ded7;border-radius
   gap: 32px;
   padding: 0 8px;
 }
+.nav-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 .nav-title .logo {
   font-family: 'Montserrat', system-ui, sans-serif;
   font-size: 1.5rem;
@@ -94,6 +99,13 @@ input,select{width:100%;padding:10px 12px;border:1px solid #d7ded7;border-radius
   display: flex;
   align-items: center;
   gap: 8px;
+}
+.site-logo {
+  height: 120px;
+  width: auto;
+  margin-right: 18px;
+  vertical-align: middle;
+  display: inline-block;
 }
 .nav-filters {
   flex: 1 1 0;
@@ -196,6 +208,15 @@ input,select{width:100%;padding:10px 12px;border:1px solid #d7ded7;border-radius
     flex-direction: column;
     align-items: stretch;
     gap: 12px;
+  }
+  .nav-title {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .site-logo {
+    margin-right: 0;
+    margin-bottom: 6px;
   }
   .nav-filters {
     justify-content: flex-start;
