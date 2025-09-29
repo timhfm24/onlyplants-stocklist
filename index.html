@@ -87,11 +87,13 @@ function plantListItem(p) {
   let type = p.category;
   const typeLabel = type.charAt(0).toUpperCase() + type.slice(1);
   const status = p.state || 'verfügbar';
-  const price = '';
+  const price = p.preis ? p.preis.toFixed(2) + ' €' : '';
+  
   // Tag-Klasse je nach Status
   let tagClass = 'ok';
   if(status === 'reserviert') tagClass = 'warn';
   if(status === 'nicht verfügbar') tagClass = 'sold';
+  
   return `<li class="plant-item" data-name="${escapeHTML(p.name)}" data-type="${type}" data-status="${status}">
     <div>
       <strong>${escapeHTML(p.name)}</strong>
@@ -100,6 +102,7 @@ function plantListItem(p) {
     <span class="price">${price}</span>
     <span class="tag ${tagClass}">${status}</span>
   </li>`;
+
 }
 
 function escapeHTML(s){
