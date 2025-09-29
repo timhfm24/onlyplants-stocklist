@@ -18,11 +18,11 @@
         <span class="nav-contact-title">Kontakt</span>
         <div class="nav-contact-btns">
           <a class="insta-btn" href="https://instagram.com/only.plants.tim" target="_blank" aria-label="Instagram">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="[...]
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
             @only.plants.tim
           </a>
           <a class="mail-btn" href="mailto:only.plants.tim@gmail.com" aria-label="E-Mail">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="[...]
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
             only.plants.tim@gmail.com
           </a>
         </div>
@@ -87,7 +87,7 @@ function plantListItem(p) {
   let type = p.category;
   const typeLabel = type.charAt(0).toUpperCase() + type.slice(1);
   const status = p.state || 'verfügbar';
-  const price = p.preis ? `${p.preis} €` : '';
+  const price = '';
   // Tag-Klasse je nach Status
   let tagClass = 'ok';
   if(status === 'reserviert') tagClass = 'warn';
