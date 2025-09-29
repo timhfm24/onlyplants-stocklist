@@ -1,93 +1,9 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <title>OnlyPlants Stocklist</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
-<header class="navbar">
-  <div class="wrap nav-content">
-    <div class="nav-title">
-      <img src="logo.jpg" alt="OnlyPlants Logo" class="site-logo" />
-      <span class="logo">OnlyPlants Stocklist</span>
-    </div>
-    <div class="nav-contact-group">
-      <div class="nav-contact-row">
-        <span class="nav-contact-title">Kontakt</span>
-        <div class="nav-contact-btns">
-          <a class="insta-btn" href="https://instagram.com/only.plants.tim" target="_blank" aria-label="Instagram">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
-            @only.plants.tim
-          </a>
-          <a class="mail-btn" href="mailto:only.plants.tim@gmail.com" aria-label="E-Mail">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
-            only.plants.tim@gmail.com
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<main class="wrap">
-  <div class="filters-row">
-    <select id="typeFilter" onchange="filter()">
-      <option value="">Typ: Alle</option>
-      <!-- Optionen werden dynamisch per JS gesetzt -->
-    </select>
-    <select id="statusFilter" onchange="filter()">
-      <option value="">Status: Alle</option>
-      <option value="verfügbar">Verfügbar</option>
-      <option value="reserviert">Reserviert</option>
-      <option value="nicht verfügbar">Nicht verfügbar</option>
-    </select>
-  </div>
-  <ul class="plant-list" id="grid">
-    <!-- Die Pflanzen werden hier per JS als <li> eingefügt -->
-  </ul>
-</main>
-
-<footer>
-  <div class="wrap">© <span id="year"></span> OnlyPlants · Privatverkauf (keine Gewährleistung)</div>
-</footer>
-
-<script>
-const q = (id)=>document.getElementById(id);
-const grid = q('grid');
-document.getElementById('year').textContent = new Date().getFullYear();
-let allPlants = [];
-
-// Pflanzen aus JSON laden und anzeigen
-fetch('plants.json', { cache: 'no-store' })
-  .then(r => r.json())
-  .then(data => {
-    allPlants = data;
-    setCategoryOptions(data);
-    render(data);
-  })
-  .catch(err => {
-    grid.innerHTML = '<div>Fehler beim Laden der Stocklist.</div>';
-    console.error(err);
-  });
-
-function setCategoryOptions(plants) {
-  const typeFilter = q('typeFilter');
-  const categories = Array.from(new Set(plants.map(p => p.category)));
-  typeFilter.innerHTML = '<option value="">Typ: Alle</option>' +
-    categories.map(cat => `<option value="${cat}">${cat.charAt(0).toUpperCase() + cat.slice(1)}</option>`).join('');
-}
-
-function render(plants) {
-  grid.innerHTML = plants.map(p => plantListItem(p)).join('');
-}
-
 function plantListItem(p) {
   let type = p.category;
   const typeLabel = type.charAt(0).toUpperCase() + type.slice(1);
   const status = p.state || 'verfügbar';
-  const price = '';
+  // PREIS AUS DEM OBJEKT EINLESEN UND ANZEIGEN
+  const price = (typeof p.preis !== 'undefined' && p.preis !== null) ? `${Number(p.preis).toFixed(2)} €` : '';
   // Tag-Klasse je nach Status
   let tagClass = 'ok';
   if(status === 'reserviert') tagClass = 'warn';
@@ -101,19 +17,3 @@ function plantListItem(p) {
     <span class="tag ${tagClass}">${status}</span>
   </li>`;
 }
-
-function escapeHTML(s){
-  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
-}
-
-function filter(){
-  const t = q('typeFilter').value;
-  const st = q('statusFilter').value;
-  const filtered = allPlants.filter(p =>
-    (!t || p.category === t) && (!st || (p.state || 'verfügbar') === st)
-  );
-  render(filtered);
-}
-</script>
-</body>
-</html>
