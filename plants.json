@@ -1,1 +1,434 @@
-[{"name": "Alocasia Azlanii", "category": "Rhizom", "state": "verfügbar", "preis": 3.00},{"name": "Alocasia Black Velvet", "category": "Rhizom", "state": "verfügbar", "preis": 2.00},{"name": "Alocasia Chantrieri", "category": "Rhizom", "state": "verfügbar", "preis": 4.00},{"name": "Alocasia Dragon Scale Albo", "category": "Rhizom", "state": "verfügbar", "preis": 20.00},{"name": "Alocasia Dragons Breath", "category": "Rhizom", "state": "verfügbar", "preis": 4.00},{"name": "Alocasia Frydek", "category": "Rhizom", "state": "verfügbar", "preis": 3.00},{"name": "Alocasia Gageana Albo", "category": "Rhizom", "state": "verfügbar", "preis": 5.00},{"name": "Alocasia Gageana Aurea", "category": "Rhizom", "state": "verfügbar", "preis": 3.00},{"name": "Alocasia Maharani", "category": "Rhizom", "state": "verfügbar", "preis": 3.00},{"name": "Alocasia Nairobi Nights", "category": "Rhizom", "state": "verfügbar", "preis": 15.00},{"name": "Alocasia Ninja Tricolor", "category": "Rhizom", "state": "verfügbar", "preis": 12.00},{"name": "Alocasia Pink Dragon", "category": "Rhizom", "state": "verfügbar", "preis": 2.00},{"name": "Alocasia Pink Dragon variegata", "category": "Rhizom", "state": "verfügbar", "preis": 10.00},{"name": "Alocasia Reginae", "category": "Rhizom", "state": "verfügbar", "preis": 4.00},{"name": "Alocasia Sanderia Bull Aurea", "category": "Rhizom", "state": "verfügbar", "preis": 25.00},{"name": "Alocasia Scalprum", "category": "Rhizom", "state": "verfügbar", "preis": 3.00},{"name": "Alocasia Shattered Glass", "category": "Rhizom", "state": "verfügbar", "preis": 8.00},{"name": "Alocasia Silver Dragon", "category": "Rhizom", "state": "verfügbar", "preis": 2.00},{"name": "Alocasia Simpo Albo", "category": "Rhizom", "state": "verfügbar", "preis": 33.00},{"name": "Alocasia Suhirmaniana Purple", "category": "Rhizom", "state": "verfügbar", "preis": 4.00},{"name": "Alocasia Corazon", "category": "Ausgetriebenes Rhizom", "state": "verfügbar", "preis": 5.00},{"name": "Alocasia Dragons Breath", "category": "Ausgetriebenes Rhizom", "state": "verfügbar", "preis": 5.00},{"name": "Alocasia Frydek", "category": "Ausgetriebenes Rhizom", "state": "verfügbar", "preis": 4.00},{"name": "Alocasia Frydek var", "category": "Ausgetriebenes Rhizom", "state": "verfügbar", "preis": 8.00},{"name": "Alocasia Gageana Albo", "category": "Ausgetriebenes Rhizom", "state": "verfügbar", "preis": 6.00},{"name": "Alocasia Gageana Aurea", "category": "Ausgetriebenes Rhizom", "state": "verfügbar", "preis": 4.00},{"name": "Alocasia Golden Bone", "category": "Ausgetriebenes Rhizom", "state": "verfügbar", "preis": 3.00},{"name": "Alocasia Nairobi Nights", "category": "Ausgetriebenes Rhizom", "state": "verfügbar", "preis": 19.00},{"name": "Alocasia Ninja Tricolor", "category": "Ausgetriebenes Rhizom", "state": "verfügbar", "preis": 20.00},{"name": "Alocasia Sabrina", "category": "Ausgetriebenes Rhizom", "state": "verfügbar", "preis": 5.00},{"name": "Alocasia Scalprum", "category": "Ausgetriebenes Rhizom", "state": "verfügbar", "preis": 5.00},{"name": "Alocasia Silver Dragon", "category": "Ausgetriebenes Rhizom", "state": "verfügbar", "preis": 3.00},{"name": "Alocasia Simpo Albo", "category": "Ausgetriebenes Rhizom", "state": "verfügbar", "preis": 40.00},{"name": "Alocasia Sinuata", "category": "Ausgetriebenes Rhizom", "state": "verfügbar", "preis": 5.00},{"name": "Alocasia Splash", "category": "Ausgetriebenes Rhizom", "state": "verfügbar", "preis": 5.00},{"name": "Alocasia Azlanii Pink variegata", "category": "Pflanze", "state": "verfügbar", "preis": 125.00},{"name": "Alocasia Chantrieri", "category": "Pflanze", "state": "verfügbar", "preis": 8.00},{"name": "Alocasia Dragon Scale Albo", "category": "Pflanze", "state": "verfügbar", "preis": 30.00},{"name": "Alocasia Dragon Scale mint", "category": "Pflanze", "state": "verfügbar", "preis": 25.00},{"name": "Alocasia Dragons Breath", "category": "Pflanze", "state": "verfügbar", "preis": 8.00},{"name": "Alocasia Emerald Tide", "category": "Pflanze", "state": "verfügbar", "preis": 33.00},{"name": "Alocasia Frydek var", "category": "Pflanze", "state": "verfügbar", "preis": 12.00},{"name": "Alocasia Gageana Albo", "category": "Pflanze", "state": "verfügbar", "preis": 12.00},{"name": "Alocasia Gageana Aurea", "category": "Pflanze", "state": "verfügbar", "preis": 7.00},{"name": "Alocasia Golden Bone", "category": "Pflanze", "state": "verfügbar", "preis": 6.00},{"name": "Alocasia Green Shield", "category": "Pflanze", "state": "verfügbar", "preis": 6.00},{"name": "Alocasia Lauterbachiana aurea", "category": "Pflanze", "state": "verfügbar", "preis": 8.00},{"name": "Alocasia Longiloba", "category": "Pflanze", "state": "verfügbar", "preis": 5.00},{"name": "Alocasia Lukiwan", "category": "Pflanze", "state": "verfügbar", "preis": 7.00},{"name": "Alocasia Nairobi Nights", "category": "Pflanze", "state": "verfügbar", "preis": 25.00},{"name": "Alocasia Pink Dragon variegata", "category": "Pflanze", "state": "verfügbar", "preis": 15.00},{"name": "Alocasia Platinum", "category": "Pflanze", "state": "verfügbar", "preis": 12.00},{"name": "Alocasia Reversa", "category": "Pflanze", "state": "verfügbar", "preis": 10.00},{"name": "Alocasia Serendipity", "category": "Pflanze", "state": "verfügbar", "preis": 10.00},{"name": "Alocasia Serendipity pink", "category": "Pflanze", "state": "verfügbar", "preis": 85.00},{"name": "Alocasia Watsoniana Ripples", "category": "Pflanze", "state": "verfügbar", "preis": 8.00},{"name": "Epipremnum Shangri La", "category": "Pflanze", "state": "verfügbar", "preis": 8.00},{"name": "Monstera Standleyana Albo", "category": "Pflanze", "state": "verfügbar", "preis": 10.00},{"name": "Monstera Thai Creme Brûlée", "category": "Pflanze", "state": "verfügbar", "preis": 22.00},{"name": "Monstera White Monster", "category": "Pflanze", "state": "verfügbar", "preis": 59.00},{"name": "Philodendron Fuzzy Petiole", "category": "Pflanze", "state": "verfügbar", "preis": 7.00},{"name": "Philodendron Mamei", "category": "Pflanze", "state": "verfügbar", "preis": 5.00},{"name": "Monstera Adansonii Frozen Freckles", "category": "Pflanze", "state": "verfügbar", "preis": 12.00},{"name": "Scindapsus Mayari variegata", "category": "Steckling", "state": "verfügbar", "preis": 10.00},{"name": "Epipremnum Shangri La", "category": "Steckling", "state": "verfügbar", "preis": 2.00},{"name": "Ficus Sagittata Pink", "category": "Steckling", "state": "verfügbar", "preis": 23.00},{"name": "Monstera Deliciosa Albo variegata", "category": "Steckling", "state": "verfügbar", "preis": 10.00},{"name": "Monstera Standleyana Albo", "category": "Steckling", "state": "verfügbar", "preis": 3.00},{"name": "Philodendron Florida Beauty", "category": "Steckling", "state": "verfügbar", "preis": 5.00},{"name": "Philodendron Plowmanii", "category": "Steckling", "state": "verfügbar", "preis": 5.00},{"name": "Syngonium Splash", "category": "Steckling", "state": "verfügbar", "preis": 3.00},{"name": "Syngonium Tricolor", "category": "Steckling", "state": "verfügbar", "preis": 5.00}]
+[
+  {
+    "name": "Alocasia Azlanii",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 3.00
+  },
+  {
+    "name": "Alocasia Azlanii Pink variegata",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 125.00
+  },
+  {
+    "name": "Alocasia Black Velvet",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 2.00
+  },
+  {
+    "name": "Alocasia Chantrieri",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 8.00
+  },
+  {
+    "name": "Alocasia Chantrieri",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 4.00
+  },
+  {
+    "name": "Alocasia Corazon",
+    "category": "Ausgetriebenes Rhizom",
+    "state": "verfügbar",
+    "preis": 5.00
+  },
+  {
+    "name": "Alocasia Dragon Scale Albo",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 30.00
+  },
+  {
+    "name": "Alocasia Dragon Scale Albo",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 20.00
+  },
+  {
+    "name": "Alocasia Dragon Scale mint",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 25.00
+  },
+  {
+    "name": "Alocasia Dragons Breath",
+    "category": "Ausgetriebenes Rhizom",
+    "state": "verfügbar",
+    "preis": 5.00
+  },
+  {
+    "name": "Alocasia Dragons Breath",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 8.00
+  },
+  {
+    "name": "Alocasia Dragons Breath",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 4.00
+  },
+  {
+    "name": "Alocasia Emerald Tide",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 33.00
+  },
+  {
+    "name": "Alocasia Frydek",
+    "category": "Ausgetriebenes Rhizom",
+    "state": "verfügbar",
+    "preis": 4.00
+  },
+  {
+    "name": "Alocasia Frydek",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 3.00
+  },
+  {
+    "name": "Alocasia Frydek var",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 12.00
+  },
+  {
+    "name": "Alocasia Frydek var",
+    "category": "Ausgetriebenes Rhizom",
+    "state": "verfügbar",
+    "preis": 8.00
+  },
+  {
+    "name": "Alocasia Gageana Albo",
+    "category": "Ausgetriebenes Rhizom",
+    "state": "verfügbar",
+    "preis": 6.00
+  },
+  {
+    "name": "Alocasia Gageana Albo",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 12.00
+  },
+  {
+    "name": "Alocasia Gageana Albo",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 5.00
+  },
+  {
+    "name": "Alocasia Gageana Aurea",
+    "category": "Ausgetriebenes Rhizom",
+    "state": "verfügbar",
+    "preis": 4.00
+  },
+  {
+    "name": "Alocasia Gageana Aurea",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 7.00
+  },
+  {
+    "name": "Alocasia Gageana Aurea",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 3.00
+  },
+  {
+    "name": "Alocasia Golden Bone",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 6.00
+  },
+  {
+    "name": "Alocasia Golden Bone",
+    "category": "Ausgetriebenes Rhizom",
+    "state": "verfügbar",
+    "preis": 3.00
+  },
+  {
+    "name": "Alocasia Green Shield",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 6.00
+  },
+  {
+    "name": "Alocasia Lauterbachiana aurea",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 8.00
+  },
+  {
+    "name": "Alocasia Longiloba",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 5.00
+  },
+  {
+    "name": "Alocasia Lukiwan",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 7.00
+  },
+  {
+    "name": "Alocasia Maharani",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 3.00
+  },
+  {
+    "name": "Alocasia Nairobi Nights",
+    "category": "Ausgetriebenes Rhizom",
+    "state": "verfügbar",
+    "preis": 19.00
+  },
+  {
+    "name": "Alocasia Nairobi Nights",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 25.00
+  },
+  {
+    "name": "Alocasia Nairobi Nights",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 15.00
+  },
+  {
+    "name": "Alocasia Ninja Tricolor",
+    "category": "Ausgetriebenes Rhizom",
+    "state": "verfügbar",
+    "preis": 20.00
+  },
+  {
+    "name": "Alocasia Ninja Tricolor",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 12.00
+  },
+  {
+    "name": "Alocasia Pink Dragon",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 2.00
+  },
+  {
+    "name": "Alocasia Pink Dragon variegata",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 15.00
+  },
+  {
+    "name": "Alocasia Pink Dragon variegata",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 10.00
+  },
+  {
+    "name": "Alocasia Platinum",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 12.00
+  },
+  {
+    "name": "Alocasia Reginae",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 4.00
+  },
+  {
+    "name": "Alocasia Reversa",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 10.00
+  },
+  {
+    "name": "Alocasia Sabrina",
+    "category": "Ausgetriebenes Rhizom",
+    "state": "verfügbar",
+    "preis": 5.00
+  },
+  {
+    "name": "Alocasia Sanderia Bull Aurea",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 25.00
+  },
+  {
+    "name": "Alocasia Scalprum",
+    "category": "Ausgetriebenes Rhizom",
+    "state": "verfügbar",
+    "preis": 5.00
+  },
+  {
+    "name": "Alocasia Scalprum",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 3.00
+  },
+  {
+    "name": "Alocasia Serendipity",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 10.00
+  },
+  {
+    "name": "Alocasia Serendipity pink",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 85.00
+  },
+  {
+    "name": "Alocasia Shattered Glass",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 8.00
+  },
+  {
+    "name": "Alocasia Silver Dragon",
+    "category": "Ausgetriebenes Rhizom",
+    "state": "verfügbar",
+    "preis": 3.00
+  },
+  {
+    "name": "Alocasia Silver Dragon",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 2.00
+  },
+  {
+    "name": "Alocasia Simpo Albo",
+    "category": "Ausgetriebenes Rhizom",
+    "state": "verfügbar",
+    "preis": 40.00
+  },
+  {
+    "name": "Alocasia Simpo Albo",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 33.00
+  },
+  {
+    "name": "Alocasia Sinuata",
+    "category": "Ausgetriebenes Rhizom",
+    "state": "verfügbar",
+    "preis": 5.00
+  },
+  {
+    "name": "Alocasia Splash",
+    "category": "Ausgetriebenes Rhizom",
+    "state": "verfügbar",
+    "preis": 5.00
+  },
+  {
+    "name": "Alocasia Suhirmaniana Purple",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 4.00
+  },
+  {
+    "name": "Alocasia Watsoniana Ripples",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 8.00
+  },
+  {
+    "name": "Epipremnum Shangri La",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 8.00
+  },
+  {
+    "name": "Epipremnum Shangri La",
+    "category": "Steckling",
+    "state": "verfügbar",
+    "preis": 2.00
+  },
+  {
+    "name": "Ficus Sagittata Pink",
+    "category": "Steckling",
+    "state": "verfügbar",
+    "preis": 23.00
+  },
+  {
+    "name": "Monstera Adansonii Frozen Freckles",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 12.00
+  },
+  {
+    "name": "Monstera Deliciosa Albo variegata",
+    "category": "Steckling",
+    "state": "verfügbar",
+    "preis": 10.00
+  },
+  {
+    "name": "Monstera Standleyana Albo",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 10.00
+  },
+  {
+    "name": "Monstera Standleyana Albo",
+    "category": "Steckling",
+    "state": "verfügbar",
+    "preis": 3.00
+  },
+  {
+    "name": "Monstera Thai Creme Brûlée",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 22.00
+  },
+  {
+    "name": "Monstera White Monster",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 59.00
+  },
+  {
+    "name": "Philodendron Florida Beauty",
+    "category": "Steckling",
+    "state": "verfügbar",
+    "preis": 5.00
+  },
+  {
+    "name": "Philodendron Fuzzy Petiole",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 7.00
+  },
+  {
+    "name": "Philodendron Mamei",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 5.00
+  },
+  {
+    "name": "Philodendron Plowmanii",
+    "category": "Steckling",
+    "state": "verfügbar",
+    "preis": 5.00
+  },
+  {
+    "name": "Scindapsus Mayari variegata",
+    "category": "Steckling",
+    "state": "verfügbar",
+    "preis": 10.00
+  },
+  {
+    "name": "Syngonium Splash",
+    "category": "Steckling",
+    "state": "verfügbar",
+    "preis": 3.00
+  },
+  {
+    "name": "Syngonium Tricolor",
+    "category": "Steckling",
+    "state": "verfügbar",
+    "preis": 5.00
+  }
+]
