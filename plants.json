@@ -2,7 +2,7 @@
   {
     "name": "Alocasia Azlanii",
     "category": "Rhizom",
-    "state": "verfügbar",
+    "state": "nicht verfügbar",
     "preis": 3.00
   },
   {
@@ -14,7 +14,7 @@
   {
     "name": "Alocasia Black Velvet",
     "category": "Rhizom",
-    "state": "verfügbar",
+    "state": "nicht verfügbar",
     "preis": 2.00
   },
   {
@@ -152,8 +152,14 @@
   {
     "name": "Alocasia Green Shield",
     "category": "Pflanze",
-    "state": "verfügbar",
+    "state": "nicht verfügbar",
     "preis": 6.00
+  },
+   {
+    "name": "Alocasia Green Unicorn",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 5.00
   },
   {
     "name": "Alocasia Lauterbachiana aurea",
@@ -224,7 +230,7 @@
   {
     "name": "Alocasia Pink Dragon variegata",
     "category": "Rhizom",
-    "state": "verfügbar",
+    "state": "nicht verfügbar",
     "preis": 10.00
   },
   {
