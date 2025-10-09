@@ -51,7 +51,7 @@
     "name": "Alocasia Dragon Scale mint",
     "category": "Pflanze",
     "state": "verfügbar",
-    "preis": 25.00
+    "preis": 22.00
   },
   {
     "name": "Alocasia Dragons Breath",
@@ -146,7 +146,7 @@
   {
     "name": "Alocasia Golden Bone",
     "category": "Ausgetriebenes Rhizom",
-    "state": "verfügbar",
+    "state": "nicht verfügbar",
     "preis": 3.00
   },
   {
@@ -224,7 +224,7 @@
   {
     "name": "Alocasia Pink Dragon variegata",
     "category": "Pflanze",
-    "state": "verfügbar",
+    "state": "nicht verfügbar",
     "preis": 15.00
   },
   {
@@ -242,7 +242,7 @@
   {
     "name": "Alocasia Reginae",
     "category": "Rhizom",
-    "state": "verfügbar",
+    "state": "nicht verfügbar",
     "preis": 4.00
   },
   {
@@ -284,7 +284,7 @@
   {
     "name": "Alocasia Serendipity pink",
     "category": "Pflanze",
-    "state": "reserviert",
+    "state": "nicht verfügbar",
     "preis": 85.00
   },
   {
@@ -309,13 +309,13 @@
     "name": "Alocasia Simpo Albo",
     "category": "Ausgetriebenes Rhizom",
     "state": "verfügbar",
-    "preis": 40.00
+    "preis": 35.00
   },
   {
     "name": "Alocasia Simpo Albo",
     "category": "Rhizom",
     "state": "verfügbar",
-    "preis": 33.00
+    "preis": 25.00
   },
   {
     "name": "Alocasia Sinuata",
@@ -329,6 +329,12 @@
     "state": "verfügbar",
     "preis": 5.00
   },
+   {
+    "name": "Alocasia Splash",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 5.00
+  },
   {
     "name": "Alocasia Suhirmaniana Purple",
     "category": "Rhizom",
@@ -338,7 +344,7 @@
   {
     "name": "Alocasia Watsoniana Ripples",
     "category": "Pflanze",
-    "state": "verfügbar",
+    "state": "nicht verfügbar",
     "preis": 8.00
   },
   {
@@ -393,7 +399,7 @@
     "name": "Monstera White Monster",
     "category": "Pflanze",
     "state": "verfügbar",
-    "preis": 59.00
+    "preis": 40.00
   },
   {
     "name": "Philodendron Florida Beauty",
@@ -404,7 +410,7 @@
   {
     "name": "Philodendron Fuzzy Petiole",
     "category": "Pflanze",
-    "state": "verfügbar",
+    "state": "nicht verfügbar",
     "preis": 7.00
   },
   {
