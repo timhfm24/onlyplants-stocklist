@@ -1,5 +1,11 @@
 [
   {
+    "name": "Alocasia Amazonica",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 5.00
+  },
+  {
     "name": "Alocasia Azlanii",
     "category": "Rhizom",
     "state": "nicht verfügbar",
@@ -13,9 +19,9 @@
   },
   {
     "name": "Alocasia Black Velvet",
-    "category": "Rhizom",
-    "state": "nicht verfügbar",
-    "preis": 2.00
+    "category": "augetriebenes Rhizom",
+    "state": "verfügbar",
+    "preis": 3.00
   },
   {
     "name": "Alocasia Chantrieri",
@@ -57,7 +63,13 @@
     "name": "Alocasia Dragons Breath",
     "category": "Ausgetriebenes Rhizom",
     "state": "verfügbar",
-    "preis": 5.00
+    "preis": 4.00
+  },
+  {
+    "name": "Alocasia Dragons Breath",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 3.00
   },
   {
     "name": "Alocasia Dragons Breath",
@@ -141,7 +153,7 @@
     "name": "Alocasia Golden Bone",
     "category": "Pflanze",
     "state": "verfügbar",
-    "preis": 6.00
+    "preis": 5.00
   },
   {
     "name": "Alocasia Golden Bone",
@@ -216,6 +228,12 @@
     "preis": 12.00
   },
   {
+    "name": "Alocasia Longiloba",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 6.00
+  },
+  {
     "name": "Alocasia Pink Dragon",
     "category": "Rhizom",
     "state": "verfügbar",
@@ -230,7 +248,7 @@
   {
     "name": "Alocasia Pink Dragon variegata",
     "category": "Rhizom",
-    "state": "nicht verfügbar",
+    "state": "verfügbar",
     "preis": 10.00
   },
   {
@@ -324,6 +342,12 @@
     "preis": 5.00
   },
   {
+    "name": "Alocasia Sinuata",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 8.00
+  },
+  {
     "name": "Alocasia Splash",
     "category": "Ausgetriebenes Rhizom",
     "state": "verfügbar",
@@ -364,6 +388,12 @@
     "category": "Steckling",
     "state": "verfügbar",
     "preis": 23.00
+  },
+  {
+    "name": "Monstera Adansonii",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 5.00
   },
   {
     "name": "Monstera Adansonii Frozen Freckles",
