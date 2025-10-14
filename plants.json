@@ -32,13 +32,13 @@
   {
     "name": "Alocasia Chantrieri",
     "category": "Rhizom",
-    "state": "verfügbar",
+    "state": "nicht verfügbar",
     "preis": 4.00
   },
   {
     "name": "Alocasia Corazon",
     "category": "Ausgetriebenes Rhizom",
-    "state": "verfügbar",
+    "state": "nicht verfügbar",
     "preis": 5.00
   },
   {
@@ -188,13 +188,13 @@
   {
     "name": "Alocasia Lukiwan",
     "category": "Pflanze",
-    "state": "verfügbar",
+    "state": "nicht verfügbar",
     "preis": 7.00
   },
   {
     "name": "Alocasia Maharani",
     "category": "Rhizom",
-    "state": "verfügbar",
+    "state": "nicht verfügbar",
     "preis": 3.00
   },
   {
@@ -254,8 +254,14 @@
   {
     "name": "Alocasia Platinum",
     "category": "Pflanze",
-    "state": "verfügbar",
+    "state": "nicht verfügbar",
     "preis": 12.00
+  },
+   {
+    "name": "Alocasia Platinum",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 4.00
   },
   {
     "name": "Alocasia Reginae",
@@ -266,14 +272,20 @@
   {
     "name": "Alocasia Reversa",
     "category": "Pflanze",
-    "state": "verfügbar",
+    "state": "nicht verfügbar",
     "preis": 10.00
   },
   {
-    "name": "Alocasia Sabrina",
+    "name": "Alocasia Sabrina Narrow",
     "category": "Ausgetriebenes Rhizom",
     "state": "verfügbar",
     "preis": 5.00
+  },
+  {
+    "name": "Alocasia Sabrina Narrow",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 10.00
   },
   {
     "name": "Alocasia Sanderia Bull Aurea",
@@ -290,7 +302,7 @@
   {
     "name": "Alocasia Scalprum",
     "category": "Rhizom",
-    "state": "verfügbar",
+    "state": "nicht verfügbar",
     "preis": 3.00
   },
   {
