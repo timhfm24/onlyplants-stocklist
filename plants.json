@@ -45,7 +45,7 @@
     "name": "Alocasia Dragon Scale Albo",
     "category": "Pflanze",
     "state": "verfügbar",
-    "preis": 30.00
+    "preis": 25.00
   },
   {
     "name": "Alocasia Dragon Scale Albo",
@@ -67,12 +67,6 @@
   },
   {
     "name": "Alocasia Dragons Breath",
-    "category": "Rhizom",
-    "state": "verfügbar",
-    "preis": 3.00
-  },
-  {
-    "name": "Alocasia Dragons Breath",
     "category": "Pflanze",
     "state": "verfügbar",
     "preis": 8.00
@@ -81,13 +75,13 @@
     "name": "Alocasia Dragons Breath",
     "category": "Rhizom",
     "state": "verfügbar",
-    "preis": 4.00
+    "preis": 3.00
   },
   {
     "name": "Alocasia Emerald Tide",
     "category": "Pflanze",
     "state": "verfügbar",
-    "preis": 33.00
+    "preis": 30.00
   },
   {
     "name": "Alocasia Frydek",
@@ -100,18 +94,18 @@
     "category": "Rhizom",
     "state": "verfügbar",
     "preis": 3.00
+  },
+  {
+    "name": "Alocasia Frydek var",
+    "category": "Ausgetriebenes Rhizom",
+    "state": "verfügbar",
+    "preis": 8.00
   },
   {
     "name": "Alocasia Frydek var",
     "category": "Pflanze",
     "state": "verfügbar",
     "preis": 12.00
-  },
-  {
-    "name": "Alocasia Frydek var",
-    "category": "Ausgetriebenes Rhizom",
-    "state": "verfügbar",
-    "preis": 8.00
   },
   {
     "name": "Alocasia Gageana Albo",
@@ -151,15 +145,15 @@
   },
   {
     "name": "Alocasia Golden Bone",
-    "category": "Pflanze",
-    "state": "verfügbar",
-    "preis": 5.00
-  },
-  {
-    "name": "Alocasia Golden Bone",
     "category": "Ausgetriebenes Rhizom",
     "state": "nicht verfügbar",
     "preis": 3.00
+  },
+  {
+    "name": "Alocasia Golden Bone",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 8.00
   },
   {
     "name": "Alocasia Green Shield",
@@ -167,7 +161,7 @@
     "state": "nicht verfügbar",
     "preis": 6.00
   },
-   {
+  {
     "name": "Alocasia Green Unicorn",
     "category": "Rhizom",
     "state": "verfügbar",
@@ -183,19 +177,19 @@
     "name": "Alocasia Longiloba",
     "category": "Pflanze",
     "state": "verfügbar",
-    "preis": 5.00
-  },
-  {
-    "name": "Alocasia Lukiwan",
-    "category": "Pflanze",
-    "state": "verfügbar",
-    "preis": 5.00
+    "preis": 6.00
   },
   {
     "name": "Alocasia Lukiwan",
     "category": "Ausgetriebenes Rhizom",
     "state": "verfügbar",
     "preis": 3.00
+  },
+  {
+    "name": "Alocasia Lukiwan",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 5.00
   },
   {
     "name": "Alocasia Maharani",
@@ -204,22 +198,16 @@
     "preis": 3.00
   },
   {
-    "name": "Alocasia Nairobi Nights",
-    "category": "Ausgetriebenes Rhizom",
-    "state": "verfügbar",
-    "preis": 19.00
-  },
-  {
-    "name": "Alocasia Nairobi Nights",
+    "name": "Alocasia Nairobi Nights aurea",
     "category": "Pflanze",
     "state": "verfügbar",
     "preis": 25.00
   },
   {
-    "name": "Alocasia Nairobi Nights",
+    "name": "Alocasia Nairobi Nights aurea",
     "category": "Rhizom",
     "state": "verfügbar",
-    "preis": 15.00
+    "preis": 10.00
   },
   {
     "name": "Alocasia Ninja Tricolor",
@@ -232,12 +220,6 @@
     "category": "Rhizom",
     "state": "verfügbar",
     "preis": 12.00
-  },
-  {
-    "name": "Alocasia Longiloba",
-    "category": "Pflanze",
-    "state": "verfügbar",
-    "preis": 6.00
   },
   {
     "name": "Alocasia Pink Dragon",
@@ -263,7 +245,7 @@
     "state": "nicht verfügbar",
     "preis": 12.00
   },
-   {
+  {
     "name": "Alocasia Platinum",
     "category": "Rhizom",
     "state": "verfügbar",
@@ -294,7 +276,7 @@
     "preis": 10.00
   },
   {
-    "name": "Alocasia Sanderia Bull Aurea",
+    "name": "Alocasia Sanderiana Bull Aurea",
     "category": "Rhizom",
     "state": "verfügbar",
     "preis": 25.00
@@ -337,6 +319,12 @@
   },
   {
     "name": "Alocasia Silver Dragon",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 5.00
+  },
+  {
+    "name": "Alocasia Silver Dragon",
     "category": "Rhizom",
     "state": "verfügbar",
     "preis": 2.00
@@ -345,7 +333,7 @@
     "name": "Alocasia Simpo Albo",
     "category": "Ausgetriebenes Rhizom",
     "state": "verfügbar",
-    "preis": 35.00
+    "preis": 30.00
   },
   {
     "name": "Alocasia Simpo Albo",
@@ -371,11 +359,11 @@
     "state": "verfügbar",
     "preis": 5.00
   },
-   {
+  {
     "name": "Alocasia Splash",
     "category": "Pflanze",
     "state": "verfügbar",
-    "preis": 5.00
+    "preis": 7.00
   },
   {
     "name": "Alocasia Suhirmaniana Purple",
