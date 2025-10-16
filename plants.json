@@ -188,8 +188,14 @@
   {
     "name": "Alocasia Lukiwan",
     "category": "Pflanze",
-    "state": "nicht verfügbar",
-    "preis": 7.00
+    "state": "verfügbar",
+    "preis": 5.00
+  },
+  {
+    "name": "Alocasia Lukiwan",
+    "category": "Ausgetriebenes Rhizom",
+    "state": "verfügbar",
+    "preis": 3.00
   },
   {
     "name": "Alocasia Maharani",
@@ -218,7 +224,7 @@
   {
     "name": "Alocasia Ninja Tricolor",
     "category": "Ausgetriebenes Rhizom",
-    "state": "verfügbar",
+    "state": "nicht verfügbar",
     "preis": 25.00
   },
   {
