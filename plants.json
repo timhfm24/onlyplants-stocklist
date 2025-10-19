@@ -42,10 +42,22 @@
     "preis": 5.00
   },
   {
+    "name": "Alocasia Cuprea Red Secret",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 3.00
+  },
+  {
     "name": "Alocasia Dragon Scale Albo",
     "category": "Pflanze",
     "state": "verfügbar",
     "preis": 25.00
+  },
+  {
+    "name": "Alocasia Dragon Scale",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 3.00
   },
   {
     "name": "Alocasia Dragon Scale Albo",
@@ -201,7 +213,7 @@
     "name": "Alocasia Nairobi Nights aurea",
     "category": "Pflanze",
     "state": "verfügbar",
-    "preis": 30.00
+    "preis": 27.00
   },
   {
     "name": "Alocasia Nairobi Nights aurea",
