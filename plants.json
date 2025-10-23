@@ -12,7 +12,7 @@
     "preis": 3.00
   },
   {
-    "name": "Alocasia Azlanii Pink variegata",
+    "name": "Alocasia Azlanii Albo Pink variegata",
     "category": "Pflanze",
     "state": "nicht verfügbar",
     "preis": 125.00
@@ -192,6 +192,12 @@
     "preis": 6.00
   },
   {
+    "name": "Alocasia Longiloba Watsoniana red vein",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 15.00
+  },
+  {
     "name": "Alocasia Lukiwan",
     "category": "Ausgetriebenes Rhizom",
     "state": "verfügbar",
@@ -208,6 +214,12 @@
     "category": "Rhizom",
     "state": "nicht verfügbar",
     "preis": 3.00
+  },
+  {
+    "name": "Alocasia Maharani Albo variegata",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 75.00
   },
   {
     "name": "Alocasia Nairobi Nights aurea",
@@ -446,7 +458,7 @@
   {
     "name": "Monstera Thai Creme Brûlée",
     "category": "Pflanze",
-    "state": "verfügbar",
+    "state": "nicht verfügbar",
     "preis": 22.00
   },
   {
