@@ -498,16 +498,28 @@
     "preis": 10.00
   },
   {
+    "name": "Scindapsus creme Brulee variegata",
+    "category": "Steckling",
+    "state": "verfügbar",
+    "preis": 12.00
+  },
+  {
+    "name": "Scindapsus creme Brulee variegata",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 40.00
+  },
+  {
     "name": "Scindapsus Mayari variegata",
     "category": "Steckling",
     "state": "verfügbar",
     "preis": 10.00
   },
   {
-    "name": "Scindapsus creme Brulee variegata",
-    "category": "Steckling",
+    "name": "Scindapsus treubii marble variegata",
+    "category": "Pflanze",
     "state": "verfügbar",
-    "preis": 12.00
+    "preis": 20.00
   },
   {
     "name": "Syngonium Splash",
