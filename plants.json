@@ -18,6 +18,24 @@
     "preis": 125.00
   },
   {
+    "name": "Alocasia Azlanii Aurea variegata",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 80.00
+  },
+  {
+    "name": "Alocasia Bambino Pink",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 12.00
+  },
+    {
+    "name": "Alocasia Black Stem Albo",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 22.00
+  },
+  {
     "name": "Alocasia Black Velvet",
     "category": "ausgetriebenes Rhizom",
     "state": "nicht verfügbar",
@@ -210,6 +228,12 @@
     "preis": 10.00
   },
   {
+    "name": "Alocasia Longiloba Watsoniana red vein",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 5.00
+  },
+  {
     "name": "Alocasia Lukiwan",
     "category": "Rhizom",
     "state": "verfügbar",
@@ -348,6 +372,12 @@
     "preis": 3.00
   },
   {
+    "name": "Alocasia Scalprum aurea",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 35.00
+  },
+  {
     "name": "Alocasia Serendipity",
     "category": "Pflanze",
     "state": "verfügbar",
@@ -406,6 +436,12 @@
     "category": "Pflanze",
     "state": "verfügbar",
     "preis": 22.00
+  },
+  {
+    "name": "Alocasia Sinuata",
+    "category": "Rhizom",
+    "state": "verfügbar",
+    "preis": 3.00
   },
   {
     "name": "Alocasia Sinuata",
