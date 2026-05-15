@@ -47,6 +47,16 @@ input,select{width:100%;padding:10px 12px;border:1px solid #d7ded7;border-radius
   font-size: 15px;
   margin-left: 8px;
 }
+.genus-badge {
+  display: inline-block;
+  background: #e6fbe6;
+  color: var(--ok);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  margin-right: 8px;
+}
 .plant-item .price {
   font-weight: 600;
   margin-left: auto;
@@ -124,6 +134,26 @@ input,select{width:100%;padding:10px 12px;border:1px solid #d7ded7;border-radius
   transition: border .2s;
 }
 .nav-filters select:focus {
+  border-color: var(--ok);
+  outline: none;
+}
+.filters-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.filters-row select {
+  flex: 1;
+  min-width: 140px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d7ded7;
+  background: #f8faf8;
+  font-size: 1rem;
+  color: var(--text);
+  transition: border .2s;
+}
+.filters-row select:focus {
   border-color: var(--ok);
   outline: none;
 }
@@ -236,5 +266,8 @@ input,select{width:100%;padding:10px 12px;border:1px solid #d7ded7;border-radius
   .filters-row {
     flex-direction: column;
     gap: 10px;
+  }
+  .filters-row select {
+    width: 100%;
   }
 }
