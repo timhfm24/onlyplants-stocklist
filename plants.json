@@ -81,7 +81,7 @@
     "name": "Alocasia Dragon Scale",
     "category": "Pflanze",
     "state": "verfügbar",
-    "preis": 3.00
+    "preis": 4.00
   },
   {
     "name": "Alocasia Dragon Scale Albo",
@@ -236,13 +236,13 @@
   {
     "name": "Alocasia Lukiwan",
     "category": "Rhizom",
-    "state": "verfügbar",
+    "state": "nicht verfügbar",
     "preis": 3.00
   },
   {
     "name": "Alocasia Lukiwan",
     "category": "Ausgetriebenes Rhizom",
-    "state": "nicht verfügbar",
+    "state": "verfügbar",
     "preis": 4.00
   },
   {
@@ -399,7 +399,7 @@
     "name": "Alocasia Shattered Glass",
     "category": "Pflanze",
     "state": "verfügbar",
-    "preis": 20.00
+    "preis": 22.00
   },
   {
     "name": "Alocasia Silver Dragon",
@@ -474,10 +474,22 @@
     "preis": 4.00
   },
   {
+    "name": "Alocasia Venom",
+    "category": "Rhiozm",
+    "state": "verfügbar",
+    "preis": 10.00
+  },
+  {
     "name": "Alocasia Watsoniana Ripples",
     "category": "Pflanze",
     "state": "nicht verfügbar",
     "preis": 8.00
+  },
+  {
+    "name": "Anthurium Carlablackiae",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 55.00
   },
   {
     "name": "Epipremnum Shangri La",
@@ -520,6 +532,12 @@
     "category": "Pflanze",
     "state": "verfügbar",
     "preis": 20.00
+  },
+  {
+    "name": "Monstera Electrolyte variegata",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 135.00
   },
   {
     "name": "Monstera Standleyana Albo",
@@ -606,7 +624,13 @@
     "preis": 3.00
   },
   {
-    "name": "Syngonium Tricolor",
+    "name": "Syngonium Strawberry Galaxy Ice",
+    "category": "Pflanze",
+    "state": "verfügbar",
+    "preis": 10.00
+  },
+  {
+    "name": "Syngonium Red Spot Tricolor",
     "category": "Steckling",
     "state": "verfügbar",
     "preis": 5.00
