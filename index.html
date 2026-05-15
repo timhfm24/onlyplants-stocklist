@@ -18,11 +18,18 @@
         <span class="nav-contact-title">Kontakt</span>
         <div class="nav-contact-btns">
           <a class="insta-btn" href="https://instagram.com/only.plants.tim" target="_blank" aria-label="Instagram">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37"></path>
+              <circle cx="17.5" cy="6.5" r="1.5"></circle>
+            </svg>
             @only.plants.tim
           </a>
           <a class="mail-btn" href="mailto:only.plants.tim@gmail.com" aria-label="E-Mail">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
             only.plants.tim@gmail.com
           </a>
         </div>
@@ -33,9 +40,11 @@
 
 <main class="wrap">
   <div class="filters-row">
+    <select id="genusFilter" onchange="filter()">
+      <option value="">Gattung: Alle</option>
+    </select>
     <select id="typeFilter" onchange="filter()">
       <option value="">Typ: Alle</option>
-      <!-- Optionen werden dynamisch per JS gesetzt -->
     </select>
     <select id="statusFilter" onchange="filter()">
       <option value="">Status: Alle</option>
@@ -44,7 +53,6 @@
     </select>
   </div>
   <ul class="plant-list" id="grid">
-    <!-- Die Pflanzen werden hier per JS als <li> eingefügt -->
   </ul>
 </main>
 
@@ -63,19 +71,30 @@ const grid = q('grid');
 document.getElementById('year').textContent = new Date().getFullYear();
 let allPlants = [];
 
-// Pflanzen aus JSON laden und anzeigen
 fetch('plants.json', { cache: 'no-store' })
   .then(r => r.json())
   .then(data => {
     allPlants = data;
+    setGenusOptions(data);
     setCategoryOptions(data);
     render(data);
-    filter(); // Filter direkt nach Laden anwenden (zeigt nur verfügbare)
+    filter();
   })
   .catch(err => {
     grid.innerHTML = '<div>Fehler beim Laden der Stocklist.</div>';
     console.error(err);
   });
+
+function getGenus(plantName) {
+  return plantName.split(' ')[0];
+}
+
+function setGenusOptions(plants) {
+  const genusFilter = q('genusFilter');
+  const genera = Array.from(new Set(plants.map(p => getGenus(p.name)))).sort();
+  genusFilter.innerHTML = '<option value="">Gattung: Alle</option>' +
+    genera.map(genus => `<option value="${genus}">${genus}</option>`).join('');
+}
 
 function setCategoryOptions(plants) {
   const typeFilter = q('typeFilter');
@@ -93,16 +112,16 @@ function plantListItem(p) {
   const typeLabel = type.charAt(0).toUpperCase() + type.slice(1);
   const status = p.state || 'verfügbar';
   const price = p.preis ? p.preis.toFixed(2) + ' €' : '';
+  const genus = getGenus(p.name);
   
-  // Tag-Klasse je nach Status
   let tagClass = 'ok';
   if(status === 'reserviert') tagClass = 'warn';
   if(status === 'nicht verfügbar') tagClass = 'sold';
   
-  return `<li class="plant-item" data-name="${escapeHTML(p.name)}" data-type="${type}" data-status="${status}">
+  return `<li class="plant-item" data-name="${escapeHTML(p.name)}" data-genus="${genus}" data-type="${type}" data-status="${status}">
     <div>
       <strong>${escapeHTML(p.name)}</strong>
-      <div class="meta">${typeLabel}</div>
+      <div class="meta"><span class="genus-badge">${genus}</span>${typeLabel}</div>
     </div>
     <span class="price">${price}</span>
     <span class="tag ${tagClass}">${status}</span>
@@ -114,11 +133,13 @@ function escapeHTML(s){
 }
 
 function filter(){
+  const g = q('genusFilter').value;
   const t = q('typeFilter').value;
   const st = q('statusFilter').value;
-  const filtered = allPlants.filter(p =>
-    (!t || p.category === t) && (!st || (p.state || 'verfügbar') === st)
-  );
+  const filtered = allPlants.filter(p => {
+    const genus = getGenus(p.name);
+    return (!g || genus === g) && (!t || p.category === t) && (!st || (p.state || 'verfügbar') === st);
+  });
   render(filtered);
 }
 </script>
